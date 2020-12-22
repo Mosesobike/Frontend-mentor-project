@@ -8,7 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css" type="text/css">
         <link
-			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,700&display=swap" rel="stylesheet"/>
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,700&display=swap" rel="stylesheet"/>
+            <script src="https://kit.fontawesome.com/74909187a1.js" crossorigin="anonymous"></script>
     </head>
     <body>
 
@@ -17,8 +18,8 @@
             <div class="intro">
                 <h1>Learn to code by watching others</h1>
                 <p>
-					See how experienced developers solve problems in real-time. Watching scripted tutorials is
-					great, but understanding how developers think is invaluable.
+					See how experienced developers solve problems in real-time.<br>Watching scripted tutorials is
+					great, but understanding how <br>developers think is invaluable.
                 </p>
         
             </div>
@@ -26,18 +27,28 @@
            <main id="form">
             <button class="accent"><span accent class="accent-span">it's free for 7days</span> then $20/mo.there after</button>
          <div class="form-container">
-            <form action="#">
+            <form name ="myfrom" action="index.html" onsubmit="return validate">
                 <label for= "first-name">
                     <input type="text" placeholder="First Name" required class="form-input">
+                    <i class="fas fa-check-circle icons"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p class="error-message">Fist name cannot be empty</p>
                 </label>
                 <label for="last-name">
-                    <input type="texr" placeholder="Last Name" required class="form-input">
+                    <input type="textz" placeholder="Last Name" required class="form-input">
+                    <i class="fas fa-check-circle icons"></i>
+                    <i class="fas fa-exclamation-circle icons"></i>
+                    <p class="error-message">Last name cannot be empty</p>
                 </label>
                 <label for="email">
                     <input type="email" placeholder="E-mail" required class="form-input">
                 </label>
+                    <p class="error-message">Looks like this is not an email</p>
                 <label for="password">
                     <input type="password" placeholder="Password" required class="form-input">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <P class="error-message">Password cannot be empty</p>
                 </label>
             </form>
             <input type="submit" class="claim-btn" value = "CLAIM YOUR FREE TRIAL">
@@ -47,6 +58,6 @@
          </div>
         </main>
     </div>
-        <script src="" async defer></script>
+        <script src="/intro-signupfrom/App.jss" async defer></script>
     </body>
 </html>

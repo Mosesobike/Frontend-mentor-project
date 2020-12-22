@@ -3,7 +3,7 @@ body{
     background-image:url("/intro-signupfrom/images/bg-intro-desktop.png");
     color: #fff;
     font-weight: 300;
-    font-family: Poppins, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 .container { 
 	min-height: 100vh;
@@ -11,19 +11,25 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 85%;
+    width: 100%;
 	margin:0em auto;
 	margin-right:5%;
 }
 .intro{
-	width:38%;
+	width:30%;
 	padding: 0 3%;
+	font-family: Poppins, sans-serif;
+	font-weight: 300;
 }
 .intro h1{
-	font-size:42px;
+	font-size:50px;
+	font-weight:900;
+}
+.intro p{
+	font-size: 22px;
 }
 .accent{
-	width:67.5%;
+	width:100%;
 	text-align:center;
 	padding:3% 3%;
 	margin-bottom: 4%;
@@ -33,8 +39,9 @@ body{
 	cursor: pointer;
 	outline: none;
 	color: white;
-	font-weight:300;
+	font-weight: 100;
 	box-shadow:5px 3px #8080806e;
+	font-family: "Poppins", sans-serif;
 }
 .accent-span{
 	font-weight: 900;
@@ -43,7 +50,7 @@ body{
 .form-container{
 	border-radius: 10px;
 	background-color:#fff;
-	width:68%;
+	width: 600px;;
 	box-shadow:5px 3px #8080806e;
 }
 form{
@@ -51,13 +58,22 @@ form{
 }
 .form-input{
 	border-radius: 5px;
-	border: 1px solid #dedede;
+	border: 0.5px solid #dedede;
 	width:80%;
 	margin-left:7%;
-	margin-bottom:4%;
 	padding:3%;
 	outline-color:rgba(46, 3, 46, 0.349);
 	outline-width: -0.9px;
+	font-family: "Poppins", sans-serif;
+}
+.error-message{
+	color: black;
+	float: right;
+	margin-right:55px;
+	visibility: hidden;
+}
+.icons{
+	visibility: hidden;
 }
 .claim-btn{
 	width: 86%;
@@ -72,6 +88,7 @@ form{
 	border: none;
 	cursor: pointer;
 	box-shadow:2px 3px #8080806e;
+	font-family: "Poppins", sans-serif;
 }
 .small-text{
 	color:gainsboro;
@@ -80,7 +97,48 @@ form{
 	padding-bottom: 10%;
 	padding-top:2%;
 	width:70%;
+	text-align: center;
+
 }
 span{
 	color:rgb(255, 122, 122) ;
+}
+@media only screen and (max-width:1260px) {
+	.container{
+		display:flex;
+		flex-direction:column;
+	}
+	.intro{
+		width: 100%;
+		text-align: center;
+	}
+	.form-container{
+		width: fit-content;
+	}
+	.small-text{
+		font-size: 8px;
+		text-align: center;
+	}
+}
+@media only screen and (max-width:395px) {
+	body{
+		background-image:url("/intro-signupfrom/images/bg-intro-mobile.png");
+		width: fit-content;
+	}
+	.intro{
+		width: fit-content;
+	}
+	.intro h1{
+		font-size: 24px;
+	}
+	.intro p{
+		font-size:14px;
+	}
+	.form-container{
+		width:fit-content;
+	}
+	.small-text{
+		font-size: 6px;
+		text-align: center;
+	}
 }
