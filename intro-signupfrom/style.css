@@ -3,9 +3,14 @@ body{
     background-image:url("/intro-signupfrom/images/bg-intro-desktop.png");
     color: #fff;
     font-weight: 300;
+<<<<<<< HEAD
 	font-family: "Poppins", sans-serif;
 	min-height: fit-content;
 	background-size:1440px;
+=======
+    font-family: "Poppins", sans-serif;
+	min-height: 100vh;
+>>>>>>> a64525bdde72a7802d5ec0cee3b9a154c30ce932
 }
 .container { 
 	min-height: 100vh;
@@ -20,7 +25,7 @@ body{
 .intro{
 	width:35%;
 	padding: 0 3%;
-	font-family: Poppins, sans-serif;
+	font-family: "Poppins", sans-serif;
 	font-weight: 300;
 }
 .intro h1{
