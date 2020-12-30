@@ -63,6 +63,9 @@ body{
 form{
 	padding-top:8%;
 }
+label{
+	width: 100%;
+}
 .form-input{
 	border-radius: 5px;
 	border: 0.5px solid #dedede;
@@ -77,13 +80,22 @@ form{
 	color:red;
 	float: right;
 	margin-right:55px;
-	/* visibility: hidden; */
+	visibility: hidden; 
 	font-size:8px;
-	font-style: italic;
-	font-weight:100;
+	font-weight:300;
+	visibility: hidden;
 }
 .icons{
-	visibility: hidden;
+  /* visibility: hidden; */
+}
+.fa-exclamation-circle{
+	color:red;
+	position: absolute;
+	margin-top:13.5px;
+	right:14.7%;
+}
+.fa-check-circle{
+	color: green;
 }
 .claim-btn{
 	width: 86%;
@@ -129,6 +141,11 @@ span{
 		font-size: 8px;
 		text-align: center;
 	}
+	.fa-exclamation-circle{
+		position: absolute;
+		right:4%;
+	}
+	
 }
 @media only screen and (max-width:395px) {
 	body{
@@ -150,5 +167,8 @@ span{
 	.small-text{
 		font-size: 6px;
 		text-align: center;
+	}
+	.fa-exclamation-circle{
+		position: absolute;
 	}
 }
