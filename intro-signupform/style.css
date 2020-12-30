@@ -1,16 +1,17 @@
+*{
+	margin: auto 0px;
+	box-sizing: border-box;
+	padding: 0px;
+}
 body{
     background-color:  rgba(255, 122, 122, 0.794);
     background-image:url("/Frontend-mentor-project/intro-signupfrom/images/bg-intro-desktop.png");
     color: #fff;
     font-weight: 300;
-<<<<<<< HEAD
 	font-family: "Poppins", sans-serif;
 	min-height: fit-content;
 	background-size:1440px;
-=======
-    font-family: "Poppins", sans-serif;
-	min-height: 100vh;
->>>>>>> a64525bdde72a7802d5ec0cee3b9a154c30ce932
+	min-height: 100vh;4c30ce932
 }
 .container { 
 	min-height: 100vh;
